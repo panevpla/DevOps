@@ -18,7 +18,7 @@ jobs:
       run: docker build . --file Dockerfile --tag my_docker_image
     
     - name: push docker image
-      uses: mr-smithers-excellent/docker-build-push@v5
+      uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: panevadm/dev_ops2022
         registry: docker.io
